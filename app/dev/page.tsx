@@ -1,6 +1,5 @@
-export default async function Dev() {
-  const res = await fetch('https://api.github.com/users/dertimonius/repos');
-  const data = await res.json();
+import Link from 'next/link';
 
-  return <p className="pt-20">{data.length}</p>;
+export default async function Dev() {
+  return <p>dev</p>;
 }

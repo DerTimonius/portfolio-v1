@@ -10,7 +10,7 @@ export default function Home() {
         <h3 className="p-4 text-xl text-zinc-300">DerTimonius</h3>
         <Link
           href="/dev"
-          className="border-2 p-2 text-lg rounded border-zinc-300 text-zinc-300 hover:bg-zinc-300 hover:text-slate-900 hover:scale-125 ease-in duration-150"
+          className="border-2 p-2 text-lg rounded border-zinc-300 text-zinc-300 hover:bg-zinc-300 hover:text-slate-900 hover:scale-110 ease-in-out duration-300"
         >
           The developer
         </Link>
@@ -19,7 +19,7 @@ export default function Home() {
         <h3 className="p-4 text-xl text-slate-900">DerTimonius</h3>
         <Link
           href="/photography"
-          className="border-2 p-2 text-lg rounded border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-zinc-300 hover:scale-125 ease-in duration-150"
+          className="border-2 p-2 text-lg rounded border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-zinc-300 hover:scale-110 ease-in-out duration-300"
         >
           The photographer
         </Link>

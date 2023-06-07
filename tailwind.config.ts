@@ -6,6 +6,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
     './app/**/*.{js,ts,jsx,tsx}',
   ],
+  daisyui: { themes: ['luxury', 'cyberpunk', 'synthwave', 'garden'] },
   theme: {
     extend: {
       backgroundImage: {
@@ -18,5 +19,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
 } satisfies Config;

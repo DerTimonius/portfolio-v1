@@ -6,23 +6,20 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
   return (
     <main className="flex flex-row w-full min-h-screen items-center">
-      <div className="flex flex-col justify-center w-[50%] min-h-screen items-center bg-slate-900">
-        <h3 className="p-4 text-xl text-zinc-300">DerTimonius</h3>
-        <Link
-          href="/dev"
-          className="border-2 p-2 text-lg rounded border-zinc-300 text-zinc-300 hover:bg-zinc-300 hover:text-slate-900 hover:scale-110 ease-in-out duration-300"
-        >
-          The developer
-        </Link>
+      <div className="flex flex-col justify-center w-[50%] min-h-screen items-center bg-base-100">
+        <h3 className="p-4 text-xl text-secondary-content">DerTimonius</h3>
+        <button className="btn btn-outline btn-primary">
+          <Link href="/dev">The developer</Link>
+        </button>
       </div>
-      <div className="flex flex-col w-[50%] justify-center items-center min-h-screen bg-zinc-300">
-        <h3 className="p-4 text-xl text-slate-900">DerTimonius</h3>
-        <Link
-          href="/photography"
-          className="border-2 p-2 text-lg rounded border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-zinc-300 hover:scale-110 ease-in-out duration-300"
-        >
-          The photographer
-        </Link>
+      <div
+        data-theme="garden"
+        className="flex flex-col w-[50%] justify-center items-center min-h-screen bg-base-100"
+      >
+        <h3 className="p-4 text-xl text-base-content">DerTimonius</h3>
+        <button className="btn btn-outline btn-ghost">
+          <Link href="/photography">The photographer</Link>
+        </button>
       </div>
     </main>
   );

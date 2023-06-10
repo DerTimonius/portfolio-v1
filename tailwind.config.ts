@@ -6,7 +6,29 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
     './app/**/*.{js,ts,jsx,tsx}',
   ],
-  daisyui: { themes: ['luxury', 'cyberpunk', 'synthwave', 'garden'] },
+  daisyui: {
+    themes: [
+      'luxury',
+      'cyberpunk',
+      'synthwave',
+      'garden',
+      'dracula',
+      'night',
+      {
+        mytheme: {
+          primary: '#e21bd2',
+          secondary: '#17b9d6',
+          accent: '#98fc62',
+          neutral: '#1a191f',
+          'base-100': '#302f37',
+          info: '#7eb8e2',
+          success: '#157f58',
+          warning: '#edc25e',
+          error: '#e6565e',
+        },
+      },
+    ],
+  },
   theme: {
     extend: {
       backgroundImage: {

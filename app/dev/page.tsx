@@ -1,7 +1,7 @@
-import Career from './Career';
-import HeroSection from './HeroSection';
-import Navbar from './Navbar';
-import Tech from './Tech';
+import Career from './Components/Career';
+import HeroSection from './Components/HeroSection';
+import Navbar from './Components/Navbar';
+import Tech from './Components/Tech';
 
 export const metadata = {
   title: 'Developer DerTimonius',
@@ -10,15 +10,11 @@ export const metadata = {
 
 export default function DevPage() {
   return (
-    <main
-      data-theme="synthwave"
-      className="min-h-screen min-w-full bg-base-100"
-    >
+    <main data-theme="mytheme" className="min-h-screen min-w-full bg-base-100">
       <Navbar />
       <HeroSection />
       <Career />
       <Tech />
-      <div>Something</div>
     </main>
   );
 }

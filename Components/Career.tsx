@@ -1,6 +1,7 @@
 'use client';
-import Motion from '@/MotionComponent/Motion';
 import { useState } from 'react';
+
+import Motion from './Motion';
 
 export default function Career() {
   const [displayedSection, setDisplayedSection] = useState(0);
@@ -10,7 +11,7 @@ export default function Career() {
       <div className="min-w-full flex flex-col items-center">
         <h1 className="text-5xl text-bold flex justify-center">Career</h1>
         <Motion delay={0.2} initialScale={0.8}>
-          <div className="tabs my-12">
+          <div className="tabs my-12 flex flex-row justify-center">
             <button
               className={`tab tab-lg tab-lifted ${
                 displayedSection === 0 && 'tab-active'
@@ -70,17 +71,7 @@ export default function Career() {
             </aside>
           ) : null}
         </Motion>
-        {/* <div className="divider divider-vertical"></div> */}
-
-        {/* <button
-            className="step"
-
-            onClick={() => setDisplayedSection(3)}
-          >
-            Student
-          </button> */}
       </div>
-      {/* </div> */}
     </div>
   );
 }

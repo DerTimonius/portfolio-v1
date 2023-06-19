@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 
 interface MotionProps extends React.PropsWithChildren {
+  className?: string;
   delay?: number;
   duration?: number;
   initialScale?: number;
-  type?: 'spring' | 'transform';
   translateX?: number;
   translateY?: number;
 }
@@ -14,13 +14,18 @@ export default function Motion({
   delay = 0,
   duration = 0.6,
   initialScale = 0.7,
-  type = 'spring',
+  className,
 }: MotionProps) {
   return (
     <motion.div
+      className={className}
       whileInView={{ opacity: 1, scale: 1 }}
       initial={{ opacity: 0, scale: initialScale }}
-      transition={{ ease: 'easeInOut', duration, delay }}
+      transition={{
+        ease: 'easeInOut',
+        duration,
+        delay,
+      }}
     >
       {children}
     </motion.div>

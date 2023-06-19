@@ -36,9 +36,6 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      gridTemplateColumns: {
-        3: '1fr 2fr 1fr',
-      },
     },
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')],

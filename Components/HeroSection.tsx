@@ -1,5 +1,5 @@
 'use client';
-import Motion from '@/MotionComponent/Motion';
+import Motion from './Motion';
 
 export default function HeroSection() {
   return (

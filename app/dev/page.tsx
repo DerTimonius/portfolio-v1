@@ -1,7 +1,7 @@
-import Career from './Components/Career';
-import HeroSection from './Components/HeroSection';
-import Navbar from './Components/Navbar';
-import Tech from './Components/Tech';
+import Career from '@/Components/Career';
+import HeroSection from '@/Components/HeroSection';
+import Navbar from '@/Components/Navbar';
+import Tech from '@/Components/Tech';
 
 export const metadata = {
   title: 'Developer DerTimonius',

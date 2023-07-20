@@ -9,10 +9,9 @@ module.exports = {
   daisyui: {
     themes: [
       'luxury',
-      'cyberpunk',
-      'synthwave',
       'garden',
       'dracula',
+      'lofi',
       'night',
       {
         mytheme: {

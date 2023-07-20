@@ -10,7 +10,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from '@icons-pack/react-simple-icons';
-import { inView, motion, useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 export default function Tech() {
@@ -39,11 +39,11 @@ export default function Tech() {
 
   return (
     <div
-      className="min-h-fit bg-accent flex justify-center items-center flex-col gap-12 p-12"
+      className="min-h-fit flex justify-center items-center flex-col gap-12 p-12"
       id="tech"
     >
-      <h1 className="text-5xl text-bold text-accent-content">My Tech Stack</h1>
-      <h3 className="text-xl font-semibold text-accent-content">
+      <h1 className="text-5xl text-bold">My Tech Stack</h1>
+      <h3 className="text-xl font-semibold">
         Some of the tools and technologies I have good experience with
       </h3>
       <motion.ul
@@ -54,67 +54,67 @@ export default function Tech() {
         ref={ref}
       >
         <motion.li
-          className="bg-slate-100 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
+          className="bg-gray-900 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
           data-tip="Next.js"
           variants={item}
         >
-          <SiNextdotjs title="" color="#1f262e" size={96} />
+          <SiNextdotjs title="" color="#f3f3f3" size={96} />
         </motion.li>
         <motion.li
-          className="bg-slate-100 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
+          className="bg-gray-900 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
           data-tip="GraphQL"
           variants={item}
         >
-          <SiGraphql title="" color="#1f262e" size={96} />
+          <SiGraphql title="" color="#f3f3f3" size={96} />
         </motion.li>
         <motion.li
-          className="bg-slate-100 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
+          className="bg-gray-900 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
           data-tip="Python"
           variants={item}
         >
-          <SiPython title="" color="#1f262e" size={96} />
+          <SiPython title="" color="#f3f3f3" size={96} />
         </motion.li>
         <motion.li
-          className="bg-slate-100 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
+          className="bg-gray-900 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
           data-tip="Typescript"
           variants={item}
         >
-          <SiTypescript title="" color="#1f262e" size={96} />
+          <SiTypescript title="" color="#f3f3f3" size={96} />
         </motion.li>
         <motion.li
-          className="bg-slate-100 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
+          className="bg-gray-900 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
           data-tip="React"
           variants={item}
         >
-          <SiReact title="" color="#1f262e" size={96} />
+          <SiReact title="" color="#f3f3f3" size={96} />
         </motion.li>
         <motion.li
-          className="bg-slate-100 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
+          className="bg-gray-900 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
           data-tip="MUI"
           variants={item}
         >
-          <SiMui title="" color="#1f262e" size={96} />
+          <SiMui title="" color="#f3f3f3" size={96} />
         </motion.li>
         <motion.li
-          className="bg-slate-100 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
+          className="bg-gray-900 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
           data-tip="Tailwindcss"
           variants={item}
         >
-          <SiTailwindcss title="" color="#1f262e" size={96} />
+          <SiTailwindcss title="" color="#f3f3f3" size={96} />
         </motion.li>
         <motion.li
-          className="bg-slate-100 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
+          className="bg-gray-900 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
           data-tip="Django"
           variants={item}
         >
-          <SiDjango title="" color="#1f262e" size={96} />
+          <SiDjango title="" color="#f3f3f3" size={96} />
         </motion.li>
         <motion.li
-          className="bg-slate-100 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
+          className="bg-gray-900 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"
           data-tip="Prisma"
           variants={item}
         >
-          <SiPrisma title="" color="#1f262e" size={96} />
+          <SiPrisma title="" color="#f3f3f3" size={96} />
         </motion.li>
       </motion.ul>
     </div>

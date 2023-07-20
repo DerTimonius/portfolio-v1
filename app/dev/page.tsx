@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function DevPage() {
   return (
-    <main data-theme="mytheme" className="min-h-screen min-w-full bg-base-100">
+    <main data-theme="lofi" className="min-h-screen min-w-full bg-base-100">
       <Navbar />
       <HeroSection />
       <Career />

@@ -21,8 +21,8 @@ export default function Navbar() {
         <Link className="btn text-lg" href="/dev/#tech" scroll={false}>
           Tech Stack
         </Link>
-        <Link className="btn text-lg" href="#" scroll={false}>
-          Link to somewhere
+        <Link className="btn text-lg" href="/dev/#open-source" scroll={false}>
+          Open Source
         </Link>
         <Link className="btn text-lg" href="/photography">
           Photography

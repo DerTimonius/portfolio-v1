@@ -11,11 +11,36 @@ import {
   SiTypescript,
 } from '@icons-pack/react-simple-icons';
 import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function Tech() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  const elementRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1, // Adjust the threshold value as needed
+      },
+    );
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => {
+      // Clean up the observer when the component unmounts
+      observer.disconnect();
+    };
+  }, []);
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -43,15 +68,15 @@ export default function Tech() {
       id="tech"
     >
       <h1 className="text-5xl text-bold">My Tech Stack</h1>
-      <h3 className="text-xl font-semibold">
+      <h3 className="text-xl font-mono prose">
         Some of the tools and technologies I have good experience with
       </h3>
       <motion.ul
         className="grid gap-10 grid-cols-3"
         variants={container}
         initial="hidden"
-        animate={isInView ? 'visible' : 'hidden'}
-        ref={ref}
+        animate={isVisible ? 'visible' : 'hidden'}
+        ref={elementRef}
       >
         <motion.li
           className="bg-gray-900 rounded-md p-2 drop-shadow-lg hover:drop-shadow-xl hover:scale-110 tooltip transition ease-in duration-200 max-w-min"

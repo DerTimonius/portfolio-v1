@@ -1,6 +1,7 @@
 import Career from '@/Components/Career';
 import HeroSection from '@/Components/HeroSection';
 import Navbar from '@/Components/Navbar';
+import { OpenSource } from '@/Components/OpenSource';
 import Tech from '@/Components/Tech';
 
 export const metadata = {
@@ -15,6 +16,7 @@ export default function DevPage() {
       <HeroSection />
       <Career />
       <Tech />
+      <OpenSource />
     </main>
   );
 }
